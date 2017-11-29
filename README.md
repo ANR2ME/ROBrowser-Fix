@@ -1,11 +1,11 @@
-![logo](http://www.robrowser.com/logo.png)
+![logo](http://www.poys.ragnarok.or.id/logo.png)
 
 roBrowser is a web-based clone of the popular MMORPG [Ragnarok Online](http://iro.ragnarokonline.com/) built with WebGL, JavaScript, HTML5, and more. The project is entirely free and opensource, so you're welcome to setup roBrowser on your own server or try a [demo](http://demo.robrowser.com/).
 
 You can learn more at http://robrowser.com
 
 ## Screenshots
-![screen](http://upload.robrowser.com/demo.jpg)
+![screen](http://poys.ragnarok.or.id/demo.jpg)
 
 
 ## Installing
@@ -23,7 +23,7 @@ If you don't run roBrowser in a Chrome App, you will need a Java plugin installe
 
 ### Quickstart
 
-1.  [Download roBrowser](https://github.com/vthibault/roBrowser/archive/master.zip) and extract it.
+1.  [Download roBrowser](https://github.com/stevenahoy/ROBrowser-Fix.git) and extract it.
 2.  [Convert DB](https://github.com/vthibault/roBrowser/tree/master/tools/converter/) to get custom content to roBrowser.
 3.  [Compile scripts](https://github.com/vthibault/roBrowser/tree/master/tools/build/) to reduce loading time.
 4.  Install the [remote client](https://github.com/vthibault/roBrowser/tree/master/client) and set the parameter *remoteClient* to your server.
