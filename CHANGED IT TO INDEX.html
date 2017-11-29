@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Ahoy Ragnarok</title>
+			<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+			<script type="text/javascript" src="api.js"></script>
+			<script type="text/javascript">
+				function initialize() {
+					var ROConfig = {
+						target:        document.getElementById("robrowser"),
+						type:          ROBrowser.TYPE.POPUP,
+						application:   ROBrowser.APP.MAPVIEWER,
+						remoteClient:  "http://stevenahoy.esy.es/robrowser/client/",
+						width:         800,
+						height:        600,
+						packetver:     20130513,
+					};
+					var RO = new ROBrowser(ROConfig);
+					RO.start();
+				}
+				window.addEventListener("load", initialize, false);
+			</script>
+		</head>
+		<body>
+			<div id="robrowser">Starting Ahoy Ragnarok...</div>
+		</body>
+		
+		
+		<script type="text/JavaScript">
+<!--
+function eventualRedirect(redirectTo, timeoutPeriod) {
+setTimeout("location.href = redirectTo;",timeoutPeriod);
+}
+// -->
+</script>
+<script type="text/JavaScript">
+<!--
+setTimeout("location.href = 'http://www.stevenahoy.esy.es/';",5000);
+-->
+</script>
+<br />
+<br />
+<br />
+<br />
+<center>
+<h4>
+Kembali ke Control Panel</h4>
+<h4>
+Dalam <script type="text/javascript">
+// KONFIGURASI
+var menit = 1; // Lamanya hitung mundur (dalam menit)
+var detik = 5; // Detik standar (jangan diubah kecuali Anda tahu yang Anda lakukan)
+var penghitung_detik = detik; // Set variabel detik yang lain untuk dimanipulasi
+// HITUNG MUNDUR
+penghitung_detik = 0;
+function hitung_mundur() {
+penghitung_detik--; // Setiap siklus 1 detik mengurangi nilainya 1 poin
+if (penghitung_detik == -1) { // Deteksi detik ketika nilainya "0"
+menit--; // Setiap siklus 1 menit mengurangi nilainya 1 poin
+penghitung_detik = detik; // Me-reset detik untuk memulai hitung mundur menit yang baru
+if (menit <= -1) { // Hitung mundur selesai
+menit = 0;penghitung_detik = 0; // Menset menit dan detik ke "0"
+clearTimeout(penghitung); // Stop hitung mundur
+}
+}
+if (document.getElementById) {
+document.getElementById("hitung_mundur_tampil").innerHTML=penghitung_detik; // Memasukkan nilai variabel menit dan detik untuk ditampilkan
+}
+penghitung=setTimeout("hitung_mundur()", 1000); // Set siklus penghitungan mundur (standar: 1 detik)
+}
+// INISIALISASI
+if (document.all||document.getElementById)
+document.write(' <b id="hitung_mundur_tampil">'+penghitung_detik+' </b>'); // Format tampilan hitung mundur di antarmuka
+hitung_mundur();
+</script> Detik </h4>
+<br /><br />
+<div style="background-color: #a5ed3f; cursor: pointer; padding: 10px; width: 200px;">
+Anda akan dialihkan ke <br />
+www.stevenahoy.esy.es</div>
+<br /><br /><div style="background-color: #dee3a6; cursor: pointer; padding: 5px; width: 300px;">
+Terimakasih Telah menunggu.</div>
+</center>
+	</html>
