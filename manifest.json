@@ -1,0 +1,33 @@
+{
+	"manifest_version": 2,
+	"name": "Ahoy RoBrowser",
+	"version": "1",
+
+	"description": "Ahoy Ragnarok Private Server",
+	"author": "Steven Ahoy",
+
+	"minimum_chrome_version": "23",
+	"icons": {
+		"16":  "applications/icon_16.png",
+		"128": "applications/icon_128.png"
+	},
+
+	"app": {
+		"background": {
+		  "scripts": ["applications/chrome-app/index.js"]
+		}
+	},
+
+	"permissions": [
+		{ "socket": ["tcp-connect:*:*"] },
+		"storage",
+		"http://*/*",
+		"https://*/*"
+	],
+
+	"requirements": {
+		"3D": {
+			"features": ["webgl"]
+		}
+	}
+}
